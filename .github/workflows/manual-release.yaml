@@ -1,0 +1,28 @@
+name: Manual Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      image:
+        description: 'Image to build (base, rust-avr)'
+        required: true
+        type: choice
+        options:
+          - base
+          - rust-avr
+      version:
+        description: 'Version (semver format: 1.2.3)'
+        required: true
+        type: string
+
+jobs:
+  build:
+    uses: ./.github/workflows/build-and-publish.yml
+    with:
+      image: ${{ inputs.image }}
+      version: ${{ inputs.version }}
+      create-release: true
+    permissions:
+      contents: write
+      packages: write
+      id-token: write
