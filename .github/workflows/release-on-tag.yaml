@@ -40,7 +40,7 @@ jobs:
 
   build-and-publish:
     needs: parse-tag
-    uses: ./.github/workflows/build-and-publish.yml
+    uses: ./.github/workflows/build-and-publish.yaml
     with:
       image: ${{ needs.parse-tag.outputs.image }}
       version: ${{ needs.parse-tag.outputs.version }}

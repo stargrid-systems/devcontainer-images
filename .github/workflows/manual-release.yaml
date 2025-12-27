@@ -17,7 +17,7 @@ on:
 
 jobs:
   build:
-    uses: ./.github/workflows/build-and-publish.yml
+    uses: ./.github/workflows/build-and-publish.yaml
     with:
       image: ${{ inputs.image }}
       version: ${{ inputs.version }}
