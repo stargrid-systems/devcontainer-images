@@ -10,6 +10,7 @@
             "upgradePackages": true
         },
         "ghcr.io/stargrid-systems/devcontainer-features/base:0.2.1": {},
+        "ghcr.io/stargrid-systems/devcontainer-features/bash:0.1.0": {},
         "ghcr.io/stargrid-systems/devcontainer-features/shell-history:0.1.1": {}
     }
 }
