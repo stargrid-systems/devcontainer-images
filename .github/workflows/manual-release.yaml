@@ -9,6 +9,7 @@ on:
         type: choice
         options:
           - base
+          - nuxt
           - rust
           - rust-avr
       version:
