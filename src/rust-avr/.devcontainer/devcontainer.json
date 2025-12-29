@@ -1,6 +1,6 @@
 {
-    "image": "ghcr.io/stargrid-systems/devcontainer-images/base:0.1.0",
-    "remoteUser": "dev",
+    "image": "ghcr.io/stargrid-systems/devcontainer-images/rust:0.1.0",
+    "privileged": true,
     "features": {
         "ghcr.io/stargrid-systems/devcontainer-features/avr-toolchain:0.1.1": {}
     }
