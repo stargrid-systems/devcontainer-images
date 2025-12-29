@@ -1,0 +1,6 @@
+{
+    "image": "ghcr.io/stargrid-systems/devcontainer-images/base:0.1.0",
+    "features": {
+        "ghcr.io/stargrid-systems/devcontainer-features/rust:0.1.0": {}
+    }
+}
