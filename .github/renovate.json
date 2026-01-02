@@ -1,11 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:best-practices"
-  ],
+  "extends": ["config:best-practices"],
   "devcontainer": {
-    "managerFilePatterns": [
-      "/(^|/)devcontainer.json$/"
-    ]
+    "managerFilePatterns": ["/(^|/)devcontainer.json$/"]
   }
 }

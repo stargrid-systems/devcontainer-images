@@ -1,16 +1,16 @@
 {
-    "image": "docker.io/debian:trixie-20251208",
-    "remoteUser": "dev",
-    "features": {
-        "ghcr.io/devcontainers/features/common-utils:2.5.5": {
-            "installZsh": true,
-            "configureZshAsDefaultShell": true,
-            "installOhMyZsh": true,
-            "installOhMyZshConfig": true,
-            "upgradePackages": true
-        },
-        "ghcr.io/stargrid-systems/devcontainer-features/base:1.1.0": {},
-        "ghcr.io/stargrid-systems/devcontainer-features/bash:0.2.0": {},
-        "ghcr.io/stargrid-systems/devcontainer-features/shell-history:0.1.2": {}
-    }
+  "image": "docker.io/debian:trixie-20251208",
+  "remoteUser": "dev",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2.5.5": {
+      "installZsh": true,
+      "configureZshAsDefaultShell": true,
+      "installOhMyZsh": true,
+      "installOhMyZshConfig": true,
+      "upgradePackages": true
+    },
+    "ghcr.io/stargrid-systems/devcontainer-features/base:1.1.0": {},
+    "ghcr.io/stargrid-systems/devcontainer-features/bash:0.2.0": {},
+    "ghcr.io/stargrid-systems/devcontainer-features/shell-history:0.1.2": {}
+  }
 }

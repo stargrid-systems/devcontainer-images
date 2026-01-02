@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       image:
-        description: 'Image to build'
+        description: "Image to build"
         required: true
         type: choice
         options:
@@ -13,7 +13,7 @@ on:
           - rust
           - rust-avr
       version:
-        description: 'Version (semver format: 1.2.3)'
+        description: "Version (semver format: 1.2.3)"
         required: true
         type: string
 

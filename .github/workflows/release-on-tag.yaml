@@ -3,7 +3,7 @@ name: Release on Tag
 on:
   push:
     tags:
-      - '*/v*.*.*'  # Matches tags like: base/v1.2.3, rust-avr/v0.1.0
+      - "*/v*.*.*" # Matches tags like: base/v1.2.3, rust-avr/v0.1.0
 
 jobs:
   parse-tag:
@@ -17,23 +17,23 @@ jobs:
         run: |
           TAG="${{ github.ref_name }}"
           echo "Processing tag: $TAG"
-          
+
           # Extract image and version from tag (format: image/vX.Y.Z)
           IMAGE=$(echo "$TAG" | cut -d'/' -f1)
           VERSION=$(echo "$TAG" | cut -d'/' -f2 | sed 's/^v//')
-          
+
           # Validate format
           if [[ ! "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
             echo "Error: Tag must be in format: image/vX.Y.Z"
             exit 1
           fi
-          
+
           # Validate image exists
           if [[ ! -d "src/$IMAGE/.devcontainer" ]]; then
             echo "Error: Image directory src/$IMAGE not found"
             exit 1
           fi
-          
+
           echo "image=$IMAGE" >> $GITHUB_OUTPUT
           echo "version=$VERSION" >> $GITHUB_OUTPUT
           echo "Parsed: image=$IMAGE, version=$VERSION"
