@@ -1,0 +1,6 @@
+{
+  "src/base": "0.2.1",
+  "src/nuxt": "0.1.0",
+  "src/rust": "0.1.0",
+  "src/rust-avr": "0.0.0"
+}
