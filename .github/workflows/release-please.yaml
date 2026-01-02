@@ -9,11 +9,96 @@ permissions:
   contents: write
   pull-requests: write
 
+env:
+  REGISTRY: ghcr.io
+  IMAGE_BASE: ${{ github.repository }}
+
 jobs:
   release-please:
     runs-on: ubuntu-latest
+    outputs:
+      releases_created: ${{ steps.release.outputs.releases_created }}
+      paths_released: ${{ steps.release.outputs.paths_released }}
+      release: ${{ toJSON(steps.release.outputs) }}
     steps:
       - uses: googleapis/release-please-action@16a9c90856f42705d54a6fda1823352bdc62cf38 # v4
+        id: release
         with:
           config-file: .github/release-please-config.json
           manifest-file: .github/release-please-manifest.json
+
+  publish:
+    needs: release-please
+    if: ${{ needs.release-please.outputs.releases_created }}
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      id-token: write
+    strategy:
+      matrix:
+        path: ${{ fromJSON(needs.release-please.outputs.paths_released) }}
+    name: "Build and Publish ${{ matrix.path }}"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
+
+      - name: Extract image name and version
+        id: meta
+        run: |
+          VERSION_KEY="${{ matrix.path }}--version"
+          VERSION=$(echo '${{ needs.release-please.outputs.release }}' | jq -r --arg key "$VERSION_KEY" '.[$key]')
+
+          if [ -z "$VERSION" ] || [ "$VERSION" == "null" ]; then
+            echo "Error: Could not find version for $VERSION_KEY"
+            exit 1
+          fi
+
+          {
+            echo "name=$(basename '${{ matrix.path }}')"
+            echo "version=$VERSION"
+          } | tee "$GITHUB_OUTPUT"
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@5e57cd118135c172c3672efd75eb46360885c0ef # v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Prepare versions
+        id: version
+        run: |
+          VERSION="${{ steps.meta.outputs.version }}"
+          if [[ ! "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Error: Version must be in semver format (e.g., 1.2.3)"
+            exit 1
+          fi
+
+          # Parse semver components
+          MAJOR=$(echo "$VERSION" | cut -d. -f1)
+          MINOR=$(echo "$VERSION" | cut -d. -f2)
+          PATCH=$(echo "$VERSION" | cut -d. -f3)
+
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "major=$MAJOR" >> $GITHUB_OUTPUT
+          echo "minor=$MINOR" >> $GITHUB_OUTPUT
+          echo "patch=$PATCH" >> $GITHUB_OUTPUT
+          echo "major-minor=$MAJOR.$MINOR" >> $GITHUB_OUTPUT
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@8d2750c68a42422c14e847fe6c8ac0403b4cbd6f # v3
+        with:
+          driver-opts: |
+            image=moby/buildkit:latest
+            network=host
+
+      - name: Build and push devcontainer image
+        uses: devcontainers/ci@8bf61b26e9c3a98f69cb6ce2f88d24ff59b785c6 # v0.3
+        with:
+          imageName: ${{ env.REGISTRY }}/${{ env.IMAGE_BASE }}/${{ steps.meta.outputs.name }}
+          imageTag: ${{ steps.version.outputs.version }},${{ steps.version.outputs.major-minor }},${{ steps.version.outputs.major }},latest
+          subFolder: ${{ matrix.path }}
+          cacheFrom: ${{ env.REGISTRY }}/${{ env.IMAGE_BASE }}/${{ steps.meta.outputs.name }}:latest
+          push: always
+        env:
+          BUILDKIT_PROGRESS: plain
