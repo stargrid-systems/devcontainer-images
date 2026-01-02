@@ -11,6 +11,8 @@
     },
     "ghcr.io/stargrid-systems/devcontainer-features/base:1.1.0": {},
     "ghcr.io/stargrid-systems/devcontainer-features/bash:0.2.0": {},
+    "ghcr.io/stargrid-systems/devcontainer-features/oras:0.2.0": {},
+    "ghcr.io/stargrid-systems/devcontainer-features/release-please:1.0.0": {},
     "ghcr.io/stargrid-systems/devcontainer-features/shell-history:0.1.2": {}
   }
 }
