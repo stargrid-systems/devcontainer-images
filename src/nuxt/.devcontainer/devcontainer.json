@@ -1,5 +1,5 @@
 {
-  "image": "ghcr.io/stargrid-systems/devcontainer-images/base:0.2.1",
+  "image": "ghcr.io/stargrid-systems/devcontainer-images/base:0.3.1",
   "features": {
     "ghcr.io/stargrid-systems/devcontainer-features/typescript:0.2.0": {}
   },
