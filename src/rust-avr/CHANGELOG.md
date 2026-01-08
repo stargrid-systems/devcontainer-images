@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/stargrid-systems/devcontainer-images/compare/rust-avr-v0.2.0...rust-avr-v0.3.0) (2026-01-08)
+
+
+### Features
+
+* bump rust base image to 0.3.0 ([7bb81b4](https://github.com/stargrid-systems/devcontainer-images/commit/7bb81b4a46f20cb9dc5e92610494db52011af3a9))
+
 ## [0.2.0](https://github.com/stargrid-systems/devcontainer-images/compare/rust-avr-v0.1.0...rust-avr-v0.2.0) (2026-01-03)
 
 
