@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/stargrid-systems/devcontainer-images/compare/base-v0.3.1...base-v0.4.0) (2026-01-08)
+
+
+### Features
+
+* **deps:** update base feature to v1.2.0 ([#27](https://github.com/stargrid-systems/devcontainer-images/issues/27)) ([e5455ec](https://github.com/stargrid-systems/devcontainer-images/commit/e5455eccf6572db37035fa72b50fe114a973f90d))
+
 ## [0.3.1](https://github.com/stargrid-systems/devcontainer-images/compare/base-v0.3.0...base-v0.3.1) (2026-01-03)
 
 
