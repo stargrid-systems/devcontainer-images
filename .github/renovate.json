@@ -3,5 +3,12 @@
   "extends": ["config:best-practices"],
   "devcontainer": {
     "managerFilePatterns": ["/(^|/)devcontainer.json$/"]
-  }
+  },
+  "packageRules": [
+    {
+      "description": "Consider dependency updates in devcontainers as releasable changes",
+      "matchFileNames": ["src/**/devcontainer.json"],
+      "semanticCommitType": "feat"
+    }
+  ]
 }
