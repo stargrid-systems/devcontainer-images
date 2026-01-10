@@ -1,7 +1,7 @@
 {
   "src/base": "0.5.0",
   "src/infrastructure": "0.0.1",
-  "src/nuxt": "0.2.0",
+  "src/nuxt": "0.3.0",
   "src/rust": "0.3.0",
   "src/rust-avr": "0.3.0"
 }
