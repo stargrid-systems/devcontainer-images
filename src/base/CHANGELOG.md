@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/stargrid-systems/devcontainer-images/compare/base-v0.4.0...base-v0.5.0) (2026-01-10)
+
+
+### Features
+
+* **deps:** update ghcr.io/stargrid-systems/devcontainer-features/base docker tag to v1.4.1 ([#37](https://github.com/stargrid-systems/devcontainer-images/issues/37)) ([b935b96](https://github.com/stargrid-systems/devcontainer-images/commit/b935b96431197b49464fe8a279fb518f0f004098))
+
 ## [0.4.0](https://github.com/stargrid-systems/devcontainer-images/compare/base-v0.3.1...base-v0.4.0) (2026-01-08)
 
 
