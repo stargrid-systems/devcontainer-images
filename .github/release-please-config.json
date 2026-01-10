@@ -6,6 +6,9 @@
     "src/base": {
       "package-name": "base"
     },
+    "src/infrastructure": {
+      "package-name": "infrastructure"
+    },
     "src/nuxt": {
       "package-name": "nuxt"
     },
