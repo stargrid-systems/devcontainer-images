@@ -2,6 +2,6 @@
   "image": "ghcr.io/stargrid-systems/devcontainer-images/base:0.4.0",
   "features": {
     "ghcr.io/stargrid-systems/devcontainer-features/kubernetes:0.1.0": {},
-    "ghcr.io/stargrid-systems/devcontainer-features/opentofu:0.3.0": {}
+    "ghcr.io/stargrid-systems/devcontainer-features/opentofu:0.4.1": {}
   }
 }
