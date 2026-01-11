@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/stargrid-systems/devcontainer-images/compare/rust-v0.4.0...rust-v0.5.0) (2026-01-11)
+
+
+### Features
+
+* **deps:** update base image to 0.6.0 ([#55](https://github.com/stargrid-systems/devcontainer-images/issues/55)) ([b299a68](https://github.com/stargrid-systems/devcontainer-images/commit/b299a68a3774844e65b37c0850983127bb9ee97c))
+
 ## [0.4.0](https://github.com/stargrid-systems/devcontainer-images/compare/rust-v0.3.0...rust-v0.4.0) (2026-01-10)
 
 
