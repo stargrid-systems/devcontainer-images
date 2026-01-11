@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/stargrid-systems/devcontainer-images/compare/rust-avr-v0.4.0...rust-avr-v0.5.0) (2026-01-11)
+
+
+### Features
+
+* **deps:** update ghcr.io/stargrid-systems/devcontainer-images/rust docker tag to v0.5.0 ([#58](https://github.com/stargrid-systems/devcontainer-images/issues/58)) ([6774657](https://github.com/stargrid-systems/devcontainer-images/commit/677465784e2e643c9cc0f6a9d6b3681d95c2e266))
+
 ## [0.4.0](https://github.com/stargrid-systems/devcontainer-images/compare/rust-avr-v0.3.0...rust-avr-v0.4.0) (2026-01-11)
 
 
