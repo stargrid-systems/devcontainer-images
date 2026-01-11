@@ -9,8 +9,9 @@
       "installOhMyZshConfig": true,
       "upgradePackages": true
     },
-    "ghcr.io/stargrid-systems/devcontainer-features/base:1.4.1": {},
+    "ghcr.io/stargrid-systems/devcontainer-features/base:1.5.0": {},
     "ghcr.io/stargrid-systems/devcontainer-features/bash:0.2.0": {},
+    "ghcr.io/stargrid-systems/devcontainer-features/markdown:0.2.0": {},
     "ghcr.io/stargrid-systems/devcontainer-features/oras:0.2.0": {},
     "ghcr.io/stargrid-systems/devcontainer-features/release-please:1.0.0": {},
     "ghcr.io/stargrid-systems/devcontainer-features/shell-history:0.1.2": {}
