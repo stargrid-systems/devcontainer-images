@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.0](https://github.com/stargrid-systems/devcontainer-images/compare/base-v0.5.0...base-v0.6.0) (2026-01-11)
+
+
+### Features
+
+* add markdown feature to base image ([#49](https://github.com/stargrid-systems/devcontainer-images/issues/49)) ([f88c819](https://github.com/stargrid-systems/devcontainer-images/commit/f88c81919005e7cf405641b540ad75c463196a4b))
+* add sigstore to base image ([#53](https://github.com/stargrid-systems/devcontainer-images/issues/53)) ([cf8331e](https://github.com/stargrid-systems/devcontainer-images/commit/cf8331ed8d07bfedce38b4577aabd9eb7c7f1978))
+
 ## [0.5.0](https://github.com/stargrid-systems/devcontainer-images/compare/base-v0.4.0...base-v0.5.0) (2026-01-10)
 
 
