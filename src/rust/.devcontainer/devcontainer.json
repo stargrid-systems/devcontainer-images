@@ -1,5 +1,5 @@
 {
-  "image": "ghcr.io/stargrid-systems/devcontainer-images/base:0.6.0",
+  "image": "ghcr.io/stargrid-systems/devcontainer-images/base:0.7.0",
   "features": {
     "ghcr.io/stargrid-systems/devcontainer-features/rust:0.4.0": {}
   }
