@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.0](https://github.com/stargrid-systems/devcontainer-images/compare/rust-v0.5.0...rust-v0.6.0) (2026-01-17)
+
+
+### Features
+
+* **deps:** update base to 0.7.0 ([844a32d](https://github.com/stargrid-systems/devcontainer-images/commit/844a32d372bb935062534ed687c56e065c89ae45))
+* **deps:** update ghcr.io/stargrid-systems/devcontainer-features/rust docker tag to v0.4.0 ([#65](https://github.com/stargrid-systems/devcontainer-images/issues/65)) ([19128de](https://github.com/stargrid-systems/devcontainer-images/commit/19128de2678678a3e91fbab1b9d38546630ed663))
+
 ## [0.5.0](https://github.com/stargrid-systems/devcontainer-images/compare/rust-v0.4.0...rust-v0.5.0) (2026-01-11)
 
 
