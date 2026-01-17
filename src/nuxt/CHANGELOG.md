@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/stargrid-systems/devcontainer-images/compare/nuxt-v0.4.0...nuxt-v0.5.0) (2026-01-17)
+
+
+### Features
+
+* **deps:** update base to 0.7.0 ([844a32d](https://github.com/stargrid-systems/devcontainer-images/commit/844a32d372bb935062534ed687c56e065c89ae45))
+
 ## [0.4.0](https://github.com/stargrid-systems/devcontainer-images/compare/nuxt-v0.3.0...nuxt-v0.4.0) (2026-01-11)
 
 
