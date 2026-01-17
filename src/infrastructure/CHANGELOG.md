@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.3.0](https://github.com/stargrid-systems/devcontainer-images/compare/infrastructure-v0.2.0...infrastructure-v0.3.0) (2026-01-17)
+
+
+### Features
+
+* **deps:** update base to 0.7.0 ([844a32d](https://github.com/stargrid-systems/devcontainer-images/commit/844a32d372bb935062534ed687c56e065c89ae45))
+* **deps:** update ghcr.io/stargrid-systems/devcontainer-features/kubernetes docker tag to v0.3.0 ([#61](https://github.com/stargrid-systems/devcontainer-images/issues/61)) ([0f11b42](https://github.com/stargrid-systems/devcontainer-images/commit/0f11b4272262cd8d203f9d6acc2c3f642ccb875c))
+* **deps:** update ghcr.io/stargrid-systems/devcontainer-features/opentofu docker tag to v0.6.0 ([#64](https://github.com/stargrid-systems/devcontainer-images/issues/64)) ([75089a4](https://github.com/stargrid-systems/devcontainer-images/commit/75089a45e79857ebd219186f26119e53f5e53adc))
+
 ## [0.2.0](https://github.com/stargrid-systems/devcontainer-images/compare/infrastructure-v0.1.0...infrastructure-v0.2.0) (2026-01-11)
 
 
