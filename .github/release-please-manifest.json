@@ -2,6 +2,5 @@
   "src/base": "0.8.0",
   "src/infrastructure": "0.3.0",
   "src/nuxt": "0.6.0",
-  "src/rust": "0.6.0",
-  "src/rust-avr": "0.6.0"
+  "src/rust": "0.6.0"
 }
