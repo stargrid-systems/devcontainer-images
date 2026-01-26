@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/stargrid-systems/devcontainer-images/compare/nuxt-v0.5.0...nuxt-v0.6.0) (2026-01-26)
+
+
+### Features
+
+* update base image to 0.8.0 ([#84](https://github.com/stargrid-systems/devcontainer-images/issues/84)) ([73c2af3](https://github.com/stargrid-systems/devcontainer-images/commit/73c2af3ce3a055799251b44ba2a7867d3770a1a1))
+
 ## [0.5.0](https://github.com/stargrid-systems/devcontainer-images/compare/nuxt-v0.4.0...nuxt-v0.5.0) (2026-01-17)
 
 

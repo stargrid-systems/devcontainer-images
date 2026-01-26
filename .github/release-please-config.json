@@ -14,9 +14,6 @@
     },
     "src/rust": {
       "package-name": "rust"
-    },
-    "src/rust-avr": {
-      "package-name": "rust-avr"
     }
   }
 }
