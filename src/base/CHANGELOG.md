@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.8.0](https://github.com/stargrid-systems/devcontainer-images/compare/base-v0.7.0...base-v0.8.0) (2026-01-26)
+
+
+### Features
+
+* **deps:** update ghcr.io/devcontainers/features/common-utils docker tag to v2.5.6 ([#71](https://github.com/stargrid-systems/devcontainer-images/issues/71)) ([42aadcd](https://github.com/stargrid-systems/devcontainer-images/commit/42aadcd416ff49ac4876cd699f35080ee6d76726))
+* **deps:** update ghcr.io/stargrid-systems/devcontainer-features/base docker tag to v1.7.0 ([#72](https://github.com/stargrid-systems/devcontainer-images/issues/72)) ([80b9693](https://github.com/stargrid-systems/devcontainer-images/commit/80b96931c0e884403a687b5ffa7a4197c2534868))
+* **deps:** update ghcr.io/stargrid-systems/devcontainer-features/release-please docker tag to v1.1.0 ([#77](https://github.com/stargrid-systems/devcontainer-images/issues/77)) ([66bcbf8](https://github.com/stargrid-systems/devcontainer-images/commit/66bcbf874827b7f5a1e9a5fccdafaef1ef9b9051))
+
 ## [0.7.0](https://github.com/stargrid-systems/devcontainer-images/compare/base-v0.6.0...base-v0.7.0) (2026-01-17)
 
 
