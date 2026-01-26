@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://github.com/stargrid-systems/devcontainer-images/compare/nuxt-v0.6.0...nuxt-v0.7.0) (2026-01-26)
+
+
+### Features
+
+* **deps:** update ghcr.io/stargrid-systems/devcontainer-features/typescript docker tag to v0.2.1 ([#88](https://github.com/stargrid-systems/devcontainer-images/issues/88)) ([1ac114e](https://github.com/stargrid-systems/devcontainer-images/commit/1ac114e8c28d3332c7076a6fafafa8ce6b7698f9))
+
 ## [0.6.0](https://github.com/stargrid-systems/devcontainer-images/compare/nuxt-v0.5.0...nuxt-v0.6.0) (2026-01-26)
 
 
