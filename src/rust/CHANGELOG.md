@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.0](https://github.com/stargrid-systems/devcontainer-images/compare/rust-v0.6.0...rust-v1.0.0) (2026-01-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* merge rust-avr into rust image ([#82](https://github.com/stargrid-systems/devcontainer-images/issues/82))
+
+### Features
+
+* **deps:** update ghcr.io/stargrid-systems/devcontainer-features/rust docker tag to v0.5.0 ([#78](https://github.com/stargrid-systems/devcontainer-images/issues/78)) ([a03004d](https://github.com/stargrid-systems/devcontainer-images/commit/a03004d0001a087c2142c018d065d819e0c94e13))
+* merge rust-avr into rust image ([#82](https://github.com/stargrid-systems/devcontainer-images/issues/82)) ([1e4816e](https://github.com/stargrid-systems/devcontainer-images/commit/1e4816eb2e93e208f19687d0bca42e79d7d90a3b))
+* update base image to 0.8.0 ([#84](https://github.com/stargrid-systems/devcontainer-images/issues/84)) ([73c2af3](https://github.com/stargrid-systems/devcontainer-images/commit/73c2af3ce3a055799251b44ba2a7867d3770a1a1))
+
 ## [0.6.0](https://github.com/stargrid-systems/devcontainer-images/compare/rust-v0.5.0...rust-v0.6.0) (2026-01-17)
 
 
