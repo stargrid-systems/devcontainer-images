@@ -1,5 +1,5 @@
 {
-  "image": "docker.io/debian:trixie-20251208",
+  "image": "docker.io/debian:13",
   "remoteUser": "dev",
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2.5.6": {
